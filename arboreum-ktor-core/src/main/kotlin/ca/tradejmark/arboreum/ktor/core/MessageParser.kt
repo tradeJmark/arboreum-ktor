@@ -1,3 +1,5 @@
+package ca.tradejmark.arboreum.ktor.core
+
 internal object MessageParser {
     fun parse(message: String): Message {
         val (action, payload) = message.split(" ").headPartition()

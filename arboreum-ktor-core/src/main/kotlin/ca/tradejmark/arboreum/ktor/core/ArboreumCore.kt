@@ -1,3 +1,5 @@
+package ca.tradejmark.arboreum.ktor.core
+
 import ca.tradejmark.arboreum.Arboreum
 import io.ktor.application.*
 import io.ktor.http.cio.websocket.*
@@ -25,7 +27,7 @@ class ArboreumCore(configuration: Configuration) {
     }
 
     companion object Feature: ApplicationFeature<Application, Configuration, ArboreumCore> {
-        override val key = AttributeKey<ArboreumCore>("ArboreumCore")
+        override val key = AttributeKey<ArboreumCore>("ca.tradejmark.arboreum.ktor.core.ArboreumCore")
 
         override fun install(pipeline: Application, configure: Configuration.() -> Unit): ArboreumCore {
             pipeline.featureOrNull(WebSockets) ?: pipeline.install(WebSockets)
