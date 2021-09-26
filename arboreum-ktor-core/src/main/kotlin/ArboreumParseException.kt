@@ -1,0 +1,1 @@
+class ArboreumParseException(message: String): Exception(message)
