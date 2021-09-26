@@ -1,3 +1,5 @@
+val ktorVersion: String by rootProject.extra
+
 plugins {
     kotlin("jvm")
     kotlin("plugin.serialization") version "1.5.31"
@@ -14,7 +16,6 @@ dependencies {
     implementation(kotlin("stdlib"))
     api("ca.tradejmark.arboreum:arboreum-kotlin:0.0.2")
 
-    val ktorVersion = "1.6.3"
     implementation("io.ktor:ktor-server-core:$ktorVersion")
     implementation("io.ktor:ktor-websockets:$ktorVersion")
 

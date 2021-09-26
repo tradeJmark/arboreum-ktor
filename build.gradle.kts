@@ -3,6 +3,7 @@ import java.io.*
 val localProperties = Properties().apply {
     load(FileInputStream(File(rootProject.rootDir, "local.properties")))
 }
+val ktorVersion by extra { "1.6.3" }
 
 plugins {
     kotlin("jvm") version "1.5.31"
@@ -29,6 +30,7 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib"))
+    implementation("io.ktor:ktor-server-core:$ktorVersion")
 
     implementation(project(":arboreum-ktor-core"))
 }
