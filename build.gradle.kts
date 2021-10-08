@@ -32,5 +32,7 @@ dependencies {
     implementation(kotlin("stdlib"))
     implementation("io.ktor:ktor-server-core:$ktorVersion")
 
+    implementation("io.ktor:ktor-html-builder:$ktorVersion")
+
     implementation(project(":arboreum-ktor-core"))
 }
