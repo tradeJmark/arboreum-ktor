@@ -8,6 +8,7 @@ import io.ktor.util.*
 import io.ktor.websocket.*
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.encodeToString
+import ca.tradejmark.arboreum.ktor.core.common.*
 
 class ArboreumCore(configuration: Configuration) {
     private val connectionString: String = configuration.connectionString

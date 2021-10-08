@@ -14,6 +14,8 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib"))
+
+    implementation(project(":arboreum-core-common"))
     api("ca.tradejmark.arboreum:arboreum-kotlin:0.0.2")
 
     implementation("io.ktor:ktor-server-core:$ktorVersion")
